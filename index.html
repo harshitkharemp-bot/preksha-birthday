@@ -412,8 +412,23 @@ footer {
   <br>
   <button onclick="location.reload()">EXPERIENCE IT AGAIN ♡</button>
 </div>
-
 <script>
+function openPhoto(src, caption) {
+  document.getElementById('modalImage').src = src;
+  document.getElementById('modalCaption').innerText = caption;
+  document.getElementById('photoModal').classList.add('show');
+}
+
+function closePhoto(event) {
+  if (
+    !event ||
+    event.target.id === 'photoModal' ||
+    event.target.id === 'closeModal'
+  ) {
+    document.getElementById('photoModal').classList.remove('show');
+  }
+}
+
 function openSite() {
   document.getElementById('intro').style.display='none';
   document.getElementById('main').style.display='block';
