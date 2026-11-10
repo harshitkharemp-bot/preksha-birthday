@@ -1,1 +1,404 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Preksha ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+
+body {
+  background:#fff8f5;
+  color:#60464b;
+  font-family:'DM Sans',sans-serif;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+h1,h2,h3,.script {
+  font-family:'Cormorant Garamond',serif;
+  font-weight:400;
+}
+
+h1 { font-size:clamp(48px,13vw,76px); }
+h2 { font-size:42px; }
+p { line-height:1.9; font-size:14px; }
+
+.eyebrow {
+  letter-spacing:4px;
+  font-size:10px;
+  color:#b77c87;
+  text-transform:uppercase;
+}
+
+button {
+  border:1px solid #d6a4ad;
+  background:#dcaab2;
+  color:white;
+  padding:14px 27px;
+  border-radius:40px;
+  font-family:inherit;
+  font-size:12px;
+  letter-spacing:1px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:active { transform:scale(.96); }
+
+button:hover {
+  background:#bd828f;
+}
+
+section {
+  padding:85px 23px;
+  max-width:650px;
+  margin:auto;
+}
+
+#intro {
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:30px 20px;
+  background:radial-gradient(ellipse at center,#fff0ed,#fff8f5 70%);
+}
+
+.envelope {
+  font-size:85px;
+  margin:28px 0;
+  cursor:pointer;
+  animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% { transform:translateY(-12px) rotate(3deg); }
+}
+
+#main { display:none; }
+
+.divider {
+  color:#d9a5ae;
+  font-size:22px;
+  margin:25px 0;
+}
+
+.hero {
+  min-height:75vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero h1 { color:#b97887; margin:15px 0; }
+
+.subtitle {
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:20px;
+}
+
+.card {
+  background:#fff;
+  padding:24px;
+  border-radius:18px;
+  box-shadow:0 8px 35px #d9a5ae20;
+  margin:20px 0;
+}
+
+.gallery {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+  margin-top:30px;
+}
+
+.photo {
+  background:white;
+  padding:9px 9px 18px;
+  box-shadow:0 5px 20px #60464b15;
+  transform:rotate(-2deg);
+}
+
+.photo:nth-child(even) { transform:rotate(2deg); }
+
+.photo img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  background:#f6e7e5;
+}
+
+.photo p {
+  font-family:'Cormorant Garamond',serif;
+  font-size:17px;
+  margin-top:8px;
+}
+
+.letter {
+  text-align:left;
+  padding:28px 23px;
+  background:#fff;
+  border:1px solid #f2dfdb;
+  border-radius:4px;
+  line-height:2;
+  font-family:'Cormorant Garamond',serif;
+  font-size:19px;
+  margin:25px 0;
+  display:none;
+}
+
+#reason {
+  min-height:75px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:25px;
+  font-style:italic;
+  margin:25px 0;
+  color:#ad7280;
+}
+
+#ending {
+  display:none;
+  min-height:100svh;
+  background:linear-gradient(160deg,#fce8e9,#fff5ef);
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:30px;
+}
+
+.heart {
+  position:fixed;
+  bottom:-30px;
+  pointer-events:none;
+  animation:rise 6s linear forwards;
+  z-index:5;
+}
+
+@keyframes rise {
+  to { transform:translateY(-110vh) rotate(40deg); opacity:0; }
+}
+
+footer {
+  padding:35px;
+  color:#bd9299;
+  font-size:11px;
+  letter-spacing:2px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING SCREEN -->
+<div id="intro">
+  <p class="eyebrow">A little something made just for you</p>
+  <div class="envelope" onclick="openSite()">💌</div>
+  <h1 style="color:#b97887">For Preksha</h1>
+  <p class="subtitle">A little world, just for you.</p>
+  <br>
+  <button onclick="openSite()">OPEN YOUR SURPRISE ♡</button>
+  <p style="margin-top:25px;color:#c29ba0;font-size:11px">
+    P.S. You are going to want to explore everything.
+  </p>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="main">
+
+  <section class="hero">
+    <p class="eyebrow">Today is all about you</p>
+    <h1>Happy Birthday,<br><i>Preksha.</i></h1>
+    <p class="subtitle">If I could give you one thing,<br>it would be the ability to see yourself through my eyes.</p>
+    <div class="divider">♡ ✧ ♡</div>
+    <p>Scroll down, birthday girl.<br>I've made you a few little surprises.</p>
+  </section>
+
+  <!-- MEMORIES -->
+  <section>
+    <p class="eyebrow">Chapter one</p>
+    <h2>Our little universe.</h2>
+    <p>Some moments deserve to be kept forever.</p>
+
+    <div class="gallery">
+      <div class="photo">
+        <img src="photo1.jpg" alt="Our memory one">
+        <p>One of my favourite days.</p>
+      </div>
+      <div class="photo">
+        <img src="photo2.jpg" alt="Our memory two">
+        <p>My favourite person.</p>
+      </div>
+      <div class="photo">
+        <img src="photo3.jpg" alt="Our memory three">
+        <p>A moment I'll keep.</p>
+      </div>
+      <div class="photo">
+        <img src="photo4.jpg" alt="Our memory four">
+        <p>Us. Always us.</p>
+      </div>
+    </div>
+    <p style="margin-top:22px;color:#b77c87">
+      Every picture has a story. And I love ours.
+    </p>
+  </section>
+
+  <div class="divider">✧ ♡ ✧</div>
+
+  <!-- LOVE LETTER -->
+  <section>
+    <p class="eyebrow">Chapter two</p>
+    <h2>A letter for you.</h2>
+    <p>Something I've wanted to tell you.</p>
+    <br>
+    <button onclick="toggleLetter()" id="letterBtn">READ MY HEART ♡</button>
+
+    <div class="letter" id="letter">
+      My dearest Preksha,<br><br>
+
+      Happy Birthday, my love.<br><br>
+
+      I don't think words will ever be enough to
+      explain how special you are to me. But I
+      still want to try.<br><br>
+
+      Somewhere between all our conversations,
+      silly moments, laughter and little memories,
+      you became someone incredibly important
+      to me.<br><br>
+
+      I hope this year gives you everything
+      your heart quietly wishes for. I hope you
+      laugh a little louder, smile a little more
+      and never forget how wonderfully special
+      you are.<br><br>
+
+      Thank you for being you. Thank you for
+      existing in my little universe.<br><br>
+
+      If I had to choose again, I'd still choose
+      getting to know you, every single time.<br><br>
+
+      I love you. More than this little website
+      could ever explain.<br><br>
+
+      Forever your person,<br>
+      <i>Harshit ♡</i>
+    </div>
+  </section>
+
+  <div class="divider">♡ ✧ ♡</div>
+
+  <!-- REASONS -->
+  <section>
+    <p class="eyebrow">Chapter three</p>
+    <h2>A little reminder.</h2>
+    <p>Tap the button. I'll tell you another reason.</p>
+
+    <div id="reason">You make ordinary days feel extraordinary. ♡</div>
+    <button onclick="newReason()">ONE MORE REASON</button>
+  </section>
+
+  <!-- ENDING BUTTON -->
+  <section>
+    <p class="eyebrow">One last thing...</p>
+    <h2>Are you ready?</h2>
+    <p>I've saved the biggest surprise for last.</p>
+    <br><br>
+    <button onclick="showEnding()">OPEN YOUR FINAL GIFT ♡</button>
+  </section>
+
+  <footer>
+    MADE WITH LOVE, ONLY FOR PREKSHA ♡
+  </footer>
+</div>
+
+<!-- FINAL SURPRISE -->
+<div id="ending">
+  <p class="eyebrow">And finally...</p>
+  <div style="font-size:75px;margin:25px">🎂</div>
+  <h1 style="color:#b97887">Happy Birthday!</h1>
+  <h2 style="font-style:italic;color:#ad7280">My Preksha ♡</h2>
+  <br>
+  <p>
+    May life always be as beautiful as the
+    smile you bring to my face.<br><br>
+    Here's to you, to us, and to all the
+    beautiful memories still waiting to happen.
+  </p>
+  <div class="divider">♡ ♡ ♡</div>
+  <h2 style="font-style:italic">I love you. Always.</h2>
+  <br>
+  <p style="font-size:11px;letter-spacing:2px">
+    WITH ALL MY LOVE — HARSHIT
+  </p>
+  <br>
+  <button onclick="location.reload()">EXPERIENCE IT AGAIN ♡</button>
+</div>
+
+<script>
+function openSite() {
+  document.getElementById('intro').style.display='none';
+  document.getElementById('main').style.display='block';
+  window.scrollTo(0,0);
+  startHearts();
+}
+
+function toggleLetter() {
+  const letter=document.getElementById('letter');
+  const btn=document.getElementById('letterBtn');
+  const open=letter.style.display==='block';
+  letter.style.display=open?'none':'block';
+  btn.innerText=open?'READ MY HEART ♡':'CLOSE LETTER';
+}
+
+const reasons=[
+  "Your smile. It genuinely makes my day.",
+  "The way you make even silence comfortable.",
+  "Your little expressions that I adore.",
+  "The way you make ordinary moments special.",
+  "Your beautiful heart.",
+  "The fact that you are simply YOU.",
+  "Because life feels a little softer with you in it.",
+  "Because there is no one quite like you."
+];
+
+let reasonIndex=0;
+
+function newReason() {
+  document.getElementById('reason').innerText=
+  reasons[reasonIndex%reasons.length];
+  reasonIndex++;
+}
+
+function showEnding() {
+  document.getElementById('main').style.display='none';
+  document.getElementById('ending').style.display='flex';
+  startHearts();
+  window.scrollTo(0,0);
+}
+
+function startHearts() {
+  setInterval(()=>{
+    const heart=document.createElement('div');
+    heart.className='heart';
+    heart.innerText=['♡','♥','✧','💕'][Math.floor(Math.random()*4)];
+    heart.style.left=Math.random()*100+'vw';
+    heart.style.fontSize=(14+Math.random()*20)+'px';
+    heart.style.color='#d89ba8';
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),6000);
+  },650);
+}
+</script>
+
+</body>
+</html>
+
