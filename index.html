@@ -8,6 +8,76 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
+/* INTERACTIVE MEMORY GALLERY */
+
+.photo {
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+.photo:active {
+  transform: scale(.97);
+}
+
+#photoModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(48, 29, 35, .92);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+#photoModal.show {
+  display: flex;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 430px;
+  background: #fff8f5;
+  padding: 15px 15px 25px;
+  border-radius: 5px;
+  text-align: center;
+  animation: popIn .3s ease;
+}
+
+.modalContent img {
+  width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+  background: #f3e4e1;
+}
+
+#modalCaption {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  margin-top: 15px;
+  color: #80545d;
+}
+
+#closeModal {
+  margin-top: 15px;
+  background: #dcaab2;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(.88);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 <style>
 * { box-sizing:border-box; margin:0; padding:0; }
 
